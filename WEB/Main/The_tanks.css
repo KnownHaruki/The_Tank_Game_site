@@ -1,0 +1,226 @@
+/*!       General       */
+html, body{
+    box-sizing: border-box;
+    word-break: break-word;
+    scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+    font-family: Bahnschrift;
+    text-align: justify;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .3);
+}
+.color{
+    color: #043616;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*     Scrollbar     */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*!       Video       */
+#bg_video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .7);
+}
+
+/*!       Header       */
+header{
+    background-color: rgba(180, 180, 180, .4);
+    padding-top: 0.4rem;
+    padding-bottom: 0;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    position:fixed;
+    --header_faltól: 1rem;
+    right: var(--header_faltól);
+    top: var(--header_faltól);
+}
+
+#header_ul{
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0;
+}
+.header_icon{
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+
+    margin-inline: 15px;
+
+    --icon_size: 35px;
+    height: var(--icon_size);
+    width: var(--icon_size);
+    padding-left: 1.5rem;
+
+    transition-duration: .5s;
+}
+.header_title{
+    transition-duration: .5s;
+    font-size: 0%;
+    opacity: 0;
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+.header_title_span{
+    background-color: #cc0030;
+    border-radius: 10px;
+    padding: 0.2rem;
+
+}
+.header_icon:hover{
+    height: calc( var(--icon_size) * 1.5);
+    width:  calc( var(--icon_size) * 1.5);
+}
+.header_icon:hover + .header_title{
+    font-size: 1rem;
+    opacity: 1;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+}
+
+/*     Icons     */
+.hamburger_icon{
+    background-image: url(../IMG/hamburger_icon.png);
+}
+.google_drive_icon{
+    background-image: url(../IMG/Google_Drive_icon.png);
+}
+.github_icon{
+    background-image: url(../IMG/Git_Hub_icon.png);
+}
+.docx_icon{
+    background-image: url(../IMG/docx_icon.png);
+}
+.about_us_icon{
+    background-image: url(../IMG/Abaut_Us_icon.png);
+    height: 40px;
+    width: 40px;
+}
+/*     Léc a header-nek     */
+#spacer{
+    height: 72px;
+}
+/*!       Main       */
+main{
+    color: white;
+    text-align: center;
+    
+}
+main h1, h2{
+    text-shadow: 5px 3px 5px rgba(0, 0, 0, 0.6);
+}
+main h1{
+    font-size: 5rem;
+    font-family: Arial Black;
+
+    margin-bottom: 0;
+}
+main h2{
+    font-style: italic;
+}
+
+/*     Gombok     */
+.download{
+    width: 12rem;
+    text-align: center;
+
+    background-color: #cc0030;
+    /*background-image: url(../IMG/fű.png);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);*/
+    border-radius: 20px;
+    transition-duration: .5s;
+
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.download:hover{
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
+}
+
+.win{
+    margin-top: 5rem;
+}
+.win, .mac, .lin{
+    display: block;
+    margin-inline: auto;
+}
+
+
+.download_icon{
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+
+    margin-inline: 15px;
+    
+    --down_icon_size: 3rem;
+    height: var(--down_icon_size);
+    width: var(--down_icon_size);
+    padding-top: 1.5rem;
+}
+.download_p{
+    color: white;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+}
+
+/*     Icons     */
+.win_icon{
+    background-image: url(../IMG/win_icon.png);
+}
+.mac_icon{
+    background-image: url(../IMG/mac_icon.png);
+}
+.lin_icon{
+    background-image: url(../IMG/lin_icon.png);
+}
+
+/*!       Footer       */
+footer{
+    position: absolute;
+    bottom: 0;
+    line-height: 1.5rem;
+    font-size: 80%;
+    width: 100%;
+    background-color: rgba(40, 40, 40, 0.3);
+}
+#footer_table{
+    width: 100%;
+}
+footer p{
+    color: white;
+    margin: 0;
+}
+#foot_left{
+    margin-left: 1rem;
+}
+#foot_right{
+    margin-right: 1rem;
+    text-align: right;
+}
+
+/*!       500px       */
+@media screen and (max-width: 500px){
+    footer{
+        display: none;
+    }
+}
