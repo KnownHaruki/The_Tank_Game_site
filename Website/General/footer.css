@@ -5,7 +5,7 @@ footer{
   align-items: center;
   font-family: 'Share Tech Mono', monospace;
 
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(10, 10, 10)
 }
 /*     Grid*/
 .foot_grid {
@@ -29,7 +29,7 @@ footer{
 }
 .foot_grid_div {
   color: #a68eff;
-  background-color: rgb(15 ,15 ,15);
+  background-color: #141414;
   text-align: center;
 
 }
