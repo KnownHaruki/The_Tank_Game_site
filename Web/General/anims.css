@@ -1,3 +1,9 @@
+/*   hr   */
 .hr_load{
   width: 40%;
+}
+
+.footer_load{
+  scale: 100%;
+  opacity: 1;
 }

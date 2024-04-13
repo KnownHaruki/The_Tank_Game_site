@@ -11,7 +11,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <!--CSS-->
+  <link rel="stylesheet" href="../General/glitch_anim.css" />
+  <link rel="stylesheet" href="../General/glitch_anim_2.css" />
   <link rel="stylesheet" href="../General/general.css" />
+  <link rel="stylesheet" href="../General/footer.css" />
   <link rel="stylesheet" href="../General/anims.css" />
   <!--Hamburger CSS-->
   <link rel="stylesheet" href="../Hamburger/hamburger.css" />
@@ -20,10 +23,14 @@
   <!--Font family-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <!--font-family: "Chakra Petch", sans-serif;-->
+    <!--font-family: "Chakra Petch", sans-serif;-->
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <!--font-family: "Caveat", cursive;-->
+    <!--font-family: "Caveat", cursive;-->
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <!--font-family: 'Share Tech Mono', monospace;-->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!--font-family: 'Barlow', sans-serif;-->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap" rel="stylesheet">
 
   <title>Főoldal</title>
 </head>
@@ -57,71 +64,47 @@
     </ul>
   </div>
 
-  <header>
-    <h1>The Tank Game</h1>
-    <hr id="hr_load">
-    <h2>" The first of its kind "</h2>
-  </header>
   <main>
-    <div class="download win">
-      <a href="../../Game/TheTankGame_Windows.zip" download="TheTankGame_Windows" title="Letöltés Windows-ra">
-        <table>
-          <tr>
-            <td>
-              <i class="download_icon win_icon"></i>
-            </td>
-            <td>
-              <p class="download_p">Letöltés</p>
-            </td>
-          </tr>
-        </table>
-      </a>
-    </div>
-    <div class="download mac">
-      <a href="../../Game/TheTankGame_Mac.zip" download="TheTankGame_Mac" title="Letöltés Mac-re">
-        <table>
-          <tr>
-            <td>
-              <i class="download_icon mac_icon"></i>
-            </td>
-            <td>
-              <p class="download_p">Letöltés</p>
-            </td>
-          </tr>
-        </table>
-      </a>
-    </div>
-    <div class="download lin">
-      <a href="../../Game/TheTankGame_Linux.zip" download="TheTankGame_Linux" title="Letöltés Linux-ra">
-        <table>
-          <tr>
-            <td>
-              <i class="download_icon lin_icon"></i>
-            </td>
-            <td>
-              <p class="download_p">Letöltés</p>
-            </td>
-          </tr>
-        </table>
-      </a>
-    </div>
+    <header>
+      <h1>The Tank Game</h1>
+      <hr id="hr_load">
+      <h2>" The first of its kind "</h2>
+    </header>
+
+    <a href="#0" id="down_bt" class="bttn-dark">Letöltés</a>
   </main>
+
   <footer>
-    <table id="footer_table">
-      <tr>
-        <td>
-          <p id="foot_left">
-            Az oldalt készítette: Nagy Endre ( v:03.26. 1.0 )
-          </p>
-        </td>
-        <td>
-          <p id="foot_right">
-            A Tutels© csapat tagjai: Harazin Noel, Nagy Endre, Wolfram Csenge,
-            Fekete patrik, Csipkés Bence
-          </p>
-        </td>
-      </tr>
-    </table>
+    <div class="foot_grid">
+      <div class="foot_grid_div col1">
+        <h1>A játékot készítette:</h1>
+        <div class="glitch tutels_glitch" onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">
+          <div class="line">Harazin Noel</div>
+          <div class="line">Harazin Noel</div>
+          <div class="line">Harazin Noel</div>
+          <div class="line">Harazin Noel</div>
+          <div class="line">Harazin Noel</div>
+          <div class="line">Harazin Noel</div>
+          <div class="line">Harazin Noel</div>
+          <div class="line">Harazin Noel</div>
+          <div class="line">Harazin Noel</div>
+        </div>
+      </div>
+      <div class="foot_grid_div col2">
+        <h1>A weboldalt készítette:</h1>
+        <div class="glitch tutels_glitch" onclick="location.href='https://youtu.be/dQw4w9WgXcQ'">
+          <div class="line">Nagy Endre</div>
+          <div class="line">Nagy Endre</div>
+          <div class="line">Nagy Endre</div>
+          <div class="line">Nagy Endre</div>
+          <div class="line">Nagy Endre</div>
+          <div class="line">Nagy Endre</div>
+          <div class="line">Nagy Endre</div>
+          <div class="line">Nagy Endre</div>
+          <div class="line">Nagy Endre</div>
+        </div>
+      </div>
+    </div>
   </footer>
 <!--JS-->
 <!--ScrollOut-->
@@ -129,6 +112,7 @@
 <!--Spitting-->
   <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 <!--Anim-->
+  <script src="../General/os.js"></script>
   <script src="../General/anims.js"></script>
 </body>
 
