@@ -39,7 +39,7 @@
  margin-bottom: 5px;
  position: relative;
  
- background: rgb(0, 0, 0);
+ background: #141414cc;
  border-radius: 3px;
  
  z-index: 1;
@@ -62,7 +62,7 @@
 .hamToggle input:checked ~ span{
  opacity: 1;
  transform: rotate(45deg) translate(-2px, -1px);
- background: rgb(0, 0, 0);
+ background: #141414cc;
 }
 .hamToggle input:checked ~ span:nth-last-child(3){
  opacity: 0;
@@ -73,10 +73,10 @@
 }
 
 .hamToggle:hover > span{
-   background-color: #444444;
+   background-color: #14141488;
 }
 .hamToggle input:checked:hover ~ span{
-   background-color: #444444;
+   background-color: #14141488;
 }
 
 .ham{
@@ -103,9 +103,11 @@
 .ham li{
    margin-right: 11px;
    padding: 1rem;
-   background: #dabe8a;
+   background: #14141473;
    border-radius: 15px;
    transition: all .5s;
+
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .ham_img{
@@ -113,7 +115,7 @@
    transition: all .5s;
 }
 .ham li:hover{
- background-color: #c4a772;
+ background-color: #14141441;
  scale: 1.1;
 }
 .ham_img:hover{
