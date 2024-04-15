@@ -39,7 +39,7 @@ header h2{
 }
 header hr{
   margin-inline: auto;
-  border: 3px solid #141414e0;
+  border: 3px solid #ffffffcc;
   border-radius: 4px;
 
   transition: all ease-in-out .5s;
