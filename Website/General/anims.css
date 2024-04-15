@@ -1,5 +1,7 @@
 :root {
-  --t-delay: 0s;
+  --t-delay-h1: 0s;
+  --t-delay-h2: 0s;
+  --t-delay-hr: 0s;
 }
 
 /*   hr   */
@@ -12,8 +14,14 @@
   opacity: 1;
 }
 /*   delays   */
-.d1{
-  transition-delay: var(--t-delay);
+.d_h1{
+  transition-delay: var(--t-delay-h1);
+}
+.d_h2{
+  transition-delay: var(--t-delay-h2);
+}
+.d_hr{
+  transition-delay: var(--t-delay-hr);
 }
 
 /*   header   */

@@ -26,32 +26,32 @@ ScrollOut({
   targets: "#h_h1",
   onShown(el) {
     root.style.setProperty('--t-delay', '.2s');
-    el.classList.add("d1","y0");
+    el.classList.add("d_h1","y0");
   },
   onHidden(el) {
     root.style.setProperty('--t-delay', '0s');
-    el.classList.remove("d1","y0");
+    el.classList.remove("d_h1","y0");
   }
 });
 ScrollOut({
   targets: "#h_hr_load",
   onShown(el) {
     root.style.setProperty('--t-delay', '1s');
-    el.classList.add("d1","h_hr_load");
+    el.classList.add("d_h2","h_hr_load");
   },
   onHidden(el) {
     root.style.setProperty('--t-delay', '0s');
-    el.classList.remove("d1","h_hr_load");
+    el.classList.remove("d_h2","h_hr_load");
   }
 });
 ScrollOut({
   targets: "#h_h2",
   onShown(el) {
     root.style.setProperty('--t-delay', '1.5s');
-    el.classList.add("d1","y0");
+    el.classList.add("d_hr","y0");
   },
   onHidden(el) {
     root.style.setProperty('--t-delay', '0s');
-    el.classList.remove("d1","y0");
+    el.classList.remove("d_hr","y0");
   }
 });

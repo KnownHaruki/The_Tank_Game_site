@@ -1,4 +1,3 @@
-//*     Os
 const userAgent = window.navigator.userAgent,
     platform = window.navigator?.userAgentData?.platform || window.navigator.platform,
     macosPlatforms = ['macOS', 'Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
@@ -10,18 +9,74 @@ var bt_type = document.getElementById("down_bt");
 var bt_img = document.getElementById("down_bt_img");
 
 if (macosPlatforms.indexOf(platform) !== -1) {
-  bt_type.classList.add("Macos");
+  if (far_far_away%2==1){
+    bt_type.href="../../Game/TheTankGame_Mac_old.zip"; 
+  }
+  else{
+    bt_type.href="../../Game/TheTankGame_mac_2.zip"; 
+  }
   bt_img.classList.add("Macos_img");
 } else if (iosPlatforms.indexOf(platform) !== -1) {
-  bt_type.classList.add("Ios");
+  if (far_far_away%2==1){
+    bt_type.href=""; 
+  }
+  else{
+    bt_type.href=""; 
+  }
+  bt_type.href=""; 
   bt_img.classList.add("Ios_img");
 } else if (windowsPlatforms.indexOf(platform) !== -1) {
-  bt_type.classList.add("Windows");
+  if (far_far_away%2==1){
+    bt_type.href="../../Game/TheTankGame_Windows_old.zip"; 
+  }
+  else{
+    bt_type.href="../../Game/TheTankGame_windows_2.zip"; 
+  }
   bt_img.classList.add("Windows_img");
 } else if (/Android/.test(userAgent)) {
-  bt_type.classList.add("Android");
+  if (far_far_away%2==1){
+    bt_type.href=""; 
+  }
+  else{
+    bt_type.href=""; 
+  }
+  bt_type.href=""; 
   bt_img.classList.add("Android_img");
 } else if (/Linux/.test(platform)) {
-  bt_type.classList.add("Linux");
+  if (far_far_away%2==1){
+    bt_type.href="../../Game/TheTankGame_Linux_old.zip"; 
+  }
+  else{
+    bt_type.href="../../Game/TheTankGame_linux_2.zip"; 
+  }
   bt_img.classList.add("Linux_img");
 }
+
+
+
+//Shhh.....
+
+var pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+var current = 0;
+var far_far_away = 0;
+
+var keyHandler = function (event) {
+	if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
+		current = 0;
+		return;
+	}
+	current++;
+
+	if (pattern.length === current) {
+		current = 0;
+		far_far_away += 1;
+	}
+  if (far_far_away%2==1){
+    document.getElementById("h_h2").textContent="\" Roads? Where we're going, we don't need roads. \"";
+  }
+  else{
+    document.getElementById("h_h2").textContent="\" The first of its kind \"";
+  }
+
+};
+document.addEventListener('keydown', keyHandler, false);
