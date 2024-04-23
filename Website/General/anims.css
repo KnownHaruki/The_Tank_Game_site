@@ -2,6 +2,7 @@
   --t-delay-h1: 0s;
   --t-delay-h2: 0s;
   --t-delay-hr: 0s;
+  --t-delay-bt: 0s;
 }
 
 /*   hr   */
@@ -23,11 +24,18 @@
 .d_hr{
   transition-delay: var(--t-delay-hr);
 }
+.d_bt{
+  transition-delay: var(--t-delay-bt);
+}
 
 /*   header   */
 .y0{
   transform: translateY(0);
   opacity: 1;
+}
+.s1{
+  opacity: 1;
+  scale: 1;
 }
 .h_hr_load{
   width: 40%;
